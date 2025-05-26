@@ -1,0 +1,9 @@
+from sklearn.linear_model import LogisticRegression
+import joblib
+
+# After training
+model = LogisticRegression()
+model.fit(X_train_tfidf, y_train)
+
+# Save the model
+joblib.dump(model, 'model.pkl')
